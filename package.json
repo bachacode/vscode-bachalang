@@ -1,0 +1,26 @@
+{
+  "name": "vscode-bachalang",
+  "author": "Bachacode",
+  "displayName": "Bachalang language",
+  "description": "Bachalang language support for Visual Studio Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "bachalang",
+      "aliases": ["Bachalang", "bachalang"],
+      "extensions": [".bc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "bachalang",
+      "scopeName": "source.bc",
+      "path": "./syntaxes/bachalang.tmLanguage.json"
+    }]
+  }
+}
